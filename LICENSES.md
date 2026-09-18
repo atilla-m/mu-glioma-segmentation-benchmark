@@ -1,17 +1,31 @@
-# Licensing plan — approval required before publication
+# Licenses
 
-This private review repository does not yet grant a public license. The authors
-and supervisor should approve the following proposed split before the repository
-is made public:
+Copyright © 2026 Atilla Mustafa, Jamila Jabrayilli, Elkhan Aghakishiyev, and
+Alasgar Aliyev.
 
-- Original source code and code cells: MIT License.
-- Original documentation, manuscript, tables, and figures: Creative Commons
-  Attribution 4.0 International (CC BY 4.0).
-- Derived result artifacts: CC BY 4.0, subject to confirmation that redistribution
-  is consistent with the terms of the source MU-Glioma-Post collection.
-- Third-party software and dependencies: their respective upstream licenses.
-- Original MU-Glioma-Post MRI and reference data: not included here; governed by
-  the source collection's terms and required citation.
+The materials in this repository use the following licensing split:
 
-After approval, add the complete license texts and change this notice from a
-proposal into the final repository licensing statement.
+## Code
+
+Original source code and code contained in the Jupyter notebooks are licensed
+under the MIT License. The complete terms are in
+[`LICENSES/MIT.txt`](LICENSES/MIT.txt).
+
+## Manuscript and research content
+
+Original manuscript text, repository documentation, tables, and figures are
+licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
+(CC BY 4.0). A licence notice is provided in
+[`LICENSES/CC-BY-4.0.md`](LICENSES/CC-BY-4.0.md).
+
+## Materials not covered by these grants
+
+- The original MU-Glioma-Post MRI images, clinical data, and reference
+  segmentations are not included. They remain subject to the source collection's
+  terms and required attribution.
+- Third-party libraries, frameworks, and software invoked by the notebooks
+  retain their respective upstream licences.
+- Trademarks and names are not licensed.
+- The retained full result archives, trained checkpoints, and prediction
+  volumes are not distributed in this repository and are not covered by the
+  repository's public content licence unless separately stated.

@@ -1,7 +1,8 @@
-# Final analysis
+# Final analysis outputs
 
-This directory is the machine-readable basis of the complete manuscript. The
-analysis was run only after all 35 archives passed the frozen ZIP contract.
+This directory contains the machine-readable numerical basis of the manuscript.
+The analysis was finalized only after every accepted run archive passed the
+prespecified artifact contract.
 
 ## Primary outputs
 
@@ -9,42 +10,38 @@ analysis was run only after all 35 archives passed the frozen ZIP contract.
   patient and architecture (203 × 5 rows).
 - `primary_model_summary.csv`: equal-patient estimates and 100,000-resample
   bootstrap confidence intervals.
-- `primary_friedman_test.csv` and `primary_paired_comparisons.csv`: the frozen
-  omnibus and paired inferential analysis.
-- `complementary_162_patient_*.csv`: prespecified sensitivity analysis that
-  excludes the earlier 41-patient development holdout.
-- `paper_numbers.json`: one machine-readable collection of all values used in
-  the manuscript.
+- `primary_friedman_test.csv` and `primary_paired_comparisons.csv`: the
+  prespecified omnibus and paired inferential analyses.
+- `complementary_162_patient_*.csv`: sensitivity analysis excluding the earlier
+  41-patient development holdout.
+- `paper_numbers.json`: machine-readable collection of values used in the
+  manuscript.
 
 ## Secondary and robustness outputs
 
-- `target_metrics_summary.csv`: uniform class/union overlap, surface, and
-  lesion metrics with reference-present denominators and undefined counts.
-- `absent_reference_summary.csv`: scan- and patient-level false-positive
-  burden, Wilson intervals, predicted volumes, and lesion counts.
-- `fold_summary.csv`: descriptive five-fold estimates.
+- `target_metrics_summary.csv`: class and union overlap, surface, and lesion
+  metrics with reference-present denominators and undefined counts.
+- `absent_reference_summary.csv`: scan- and patient-level false-positive burden,
+  Wilson intervals, predicted volumes, and lesion counts.
+- `fold_summary.csv`: descriptive outer-fold estimates.
 - `seed_fold1_means.csv` and `seed_sensitivity_summary.csv`: fold-1 results for
   seeds 2026, 2027, and 2028 without inflating the patient sample size.
-- `run_efficiency.csv` and `efficiency_summary.csv`: run-level and model-level
-  resource records; hardware was not balanced, so these are descriptive.
-- `qualitative_case_selection.csv`: the deterministic case-selection rule and
-  selected cases used for Figure 6.
+- `run_efficiency.csv` and `efficiency_summary.csv`: descriptive resource
+  records; hardware was not balanced as an experimental factor.
+- `qualitative_case_selection.csv`: deterministic selection record for the
+  qualitative figure.
 
 ## Integrity
 
-- `analysis_manifest.json` records the analysis environment, script hash, and
-  SHA-256 identity of every input archive.
-- `final_audit_report.json` records 88 independent checks, including direct
-  reconstruction of primary patient scores from per-case ZIP members, all
-  qualitative prediction identities, key manuscript values, PDF readability,
-  and embedded DOCX figures.
+- `analysis_manifest.json` records the analysis environment, script identity,
+  and SHA-256 identity of every input archive.
+- `final_audit_report.json` records the completed full-artifact audit.
+- `../validated_result_manifest.csv` and
+  `../../artifacts/validated_archive_checksums.sha256` link the public summaries
+  to the retained full archives.
 
-Reproduce the analysis from the repository root with:
-
-```bash
-MPLCONFIGDIR=/tmp/mu-glioma-matplotlib \
-  .venv-no10-local/bin/python \
-  MU_Glioma_Research_Package/reproducibility/analyze_final_35_runs.py
-```
-
-Then run `reproducibility/audit_final_outputs.py` using the same environment.
+The committed summaries can be inspected directly. A complete rerun of
+`reproducibility/analyze_final_35_runs.py` additionally requires the retained
+validated archives in `results/validated_zips/no1` through
+`results/validated_zips/no35` and the original dataset for rebuilding the
+qualitative image panel.

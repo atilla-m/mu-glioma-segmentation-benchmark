@@ -19,9 +19,9 @@ PACKAGE = Path(__file__).resolve().parents[1]
 ROOT = PACKAGE.parent
 ANALYSIS = PACKAGE / "results" / "final_analysis"
 ZIP_ROOT = PACKAGE / "results" / "validated_zips"
-MANUSCRIPT = PACKAGE / "manuscript" / "MU_Glioma_Research_Paper.md"
-PDF = MANUSCRIPT.with_suffix(".pdf")
-DOCX = MANUSCRIPT.with_suffix(".docx")
+PAPER_DIR = PACKAGE / "manuscript"
+PDF = PAPER_DIR / "MU_Glioma_Research_Paper.pdf"
+DOCX = PAPER_DIR / "MU_Glioma_Research_Paper.docx"
 PRIMARY_TARGET = "Tumor-related region (1-3)"
 MODEL_ORDER = [
     "Standard 3D U-Net",
@@ -139,11 +139,6 @@ def main():
                 )
             check(f"qualitative prediction {row.case_id} {model}", count == 1, count)
 
-    manuscript_text = MANUSCRIPT.read_text(encoding="utf-8")
-    check("manuscript has no pending analysis marker", "[PENDING" not in manuscript_text)
-    for token in ["0.879", "47.29", "4.76 × 10^-33", "4,160", "Figure 6"]:
-        check(f"manuscript contains {token}", token in manuscript_text)
-
     figures = [
         "study_design.png",
         "primary_performance.png",
@@ -153,7 +148,7 @@ def main():
         "qualitative_predictions.png",
     ]
     for filename in figures:
-        path = PACKAGE / "manuscript" / "figures" / filename
+        path = PAPER_DIR / "figures" / filename
         check(f"figure exists and is nonempty: {filename}", path.stat().st_size > 50_000, path.stat().st_size)
 
     check("PDF exists", PDF.stat().st_size > 500_000, PDF.stat().st_size)
@@ -163,7 +158,16 @@ def main():
     text_path = Path("/tmp/mu_glioma_final_audit_text.txt")
     subprocess.run(["pdftotext", str(PDF), str(text_path)], check=True)
     pdf_text = text_path.read_text(encoding="utf-8")
-    for token in ["Primary out-of-fold", "0.879", "Declaration of generative AI", "References"]:
+    for token in [
+        "Primary Dice score",
+        "0.879",
+        "47.29",
+        "4,160",
+        "Figure 6",
+        "Declaration of generative AI",
+        "github.com/atilla-m/mu-glioma-segmentation-benchmark",
+        "References",
+    ]:
         check(f"PDF contains {token}", token in pdf_text)
 
     with zipfile.ZipFile(DOCX) as archive:

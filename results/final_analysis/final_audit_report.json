@@ -1,8 +1,8 @@
 {
   "audit_version": "final_manuscript_audit_v1",
-  "date": "2026-09-06",
+  "date": "2026-09-19",
   "status": "PASS",
-  "checks_passed": 88,
+  "checks_passed": 86,
   "checks": [
     {
       "check": "35 validated ZIPs are present",
@@ -350,36 +350,6 @@
       "detail": "1"
     },
     {
-      "check": "manuscript has no pending analysis marker",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "manuscript contains 0.879",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "manuscript contains 47.29",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "manuscript contains 4.76 \u00d7 10^-33",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "manuscript contains 4,160",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "manuscript contains Figure 6",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "figure exists and is nonempty: study_design.png",
       "passed": true,
       "detail": "295865"
@@ -412,15 +382,15 @@
     {
       "check": "PDF exists",
       "passed": true,
-      "detail": "1268022"
+      "detail": "1306782"
     },
     {
       "check": "PDF has at least 10 pages",
       "passed": true,
-      "detail": "17"
+      "detail": "18"
     },
     {
-      "check": "PDF contains Primary out-of-fold",
+      "check": "PDF contains Primary Dice score",
       "passed": true,
       "detail": ""
     },
@@ -430,7 +400,27 @@
       "detail": ""
     },
     {
+      "check": "PDF contains 47.29",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF contains 4,160",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF contains Figure 6",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "PDF contains Declaration of generative AI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF contains github.com/atilla-m/mu-glioma-segmentation-benchmark",
       "passed": true,
       "detail": ""
     },
@@ -442,7 +432,7 @@
     {
       "check": "DOCX embeds all six figures",
       "passed": true,
-      "detail": "['word/media/image6.png', 'word/media/image1.png', 'word/media/image5.png', 'word/media/image4.png', 'word/media/image3.png', 'word/media/image2.png']"
+      "detail": "['word/media/image6.jpeg', 'word/media/image3.jpeg', 'word/media/image5.jpeg', 'word/media/image2.jpeg', 'word/media/image4.jpeg', 'word/media/image1.jpeg']"
     }
   ]
 }

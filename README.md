@@ -1,96 +1,120 @@
-# MU-Glioma-Post segmentation benchmark
+# Patient-grouped benchmarking of postoperative glioma segmentation pipelines
 
-Reproducibility materials for **Nested Patient-Grouped Benchmarking of 3D
-Deep-Learning Pipelines for Multiclass Postoperative Glioma Segmentation on
-Longitudinal MRI**.
+This repository contains the manuscript and reproducibility materials for
+**Nested Patient-Grouped Benchmarking of 3D Deep-Learning Pipelines for
+Multiclass Postoperative Glioma Segmentation on Longitudinal MRI**.
 
-This repository is designed to be usable on its own. It contains the manuscript,
-the exact execution notebooks, frozen patient splits, analysis code, compact
-results, figures, run records, and checksums. The large validated run archives
-are distributed as assets attached to the GitHub release rather than stored in
-Git history.
+The study compares 3D U-Net, Residual 3D U-Net, 3D V-Net, and 3D U-Net++ under
+a controlled Keras pipeline and evaluates nnU-Net v2 3D full resolution as a
+practical whole-pipeline comparator. The analysis uses 594 eligible longitudinal
+MRI examinations from 203 patients in the public MU-Glioma-Post collection.
+All partitions are patient grouped, with an inner tuning partition for model
+selection and a held-out outer fold for evaluation.
 
-The source MRI dataset is intentionally not redistributed. It remains available
-from The Cancer Imaging Archive as MU-Glioma-Post:
+This is a technical internal-validation study. It is not a diagnostic-accuracy
+study and does not establish clinical utility or external generalizability.
 
-- Collection: <https://www.cancerimagingarchive.net/collection/mu-glioma-post/>
-- Dataset DOI: <https://doi.org/10.7937/7K9K-3C83>
+## Repository contents
 
-## Study materials
-
-| Location | Contents |
+| Directory | Contents |
 |---|---|
-| `paper/` | Current manuscript draft and publication figures |
-| `notebooks/` | Exact notebooks used for the completed runs and their manifest |
-| `protocol/` | Frozen analysis plan, run matrix, fold definitions, and artifact contract |
-| `results/final_analysis/` | Final patient-level analysis, statistical tables, and audit report |
-| `results/progress/` | Human-readable CSV and Excel run tracker |
-| `results/validation_records/` | Machine-readable validation record for every run |
-| `reproducibility/` | Metric, validation, analysis, figure, and audit programs |
-| `release-assets/` | Checksums and instructions for the large result archives |
+| [`manuscript/`](manuscript/) | Manuscript in DOCX and PDF, plus all manuscript figures |
+| [`notebooks/`](notebooks/) | Exact execution notebooks and their SHA-256 manifest |
+| [`protocol/`](protocol/) | Prespecified analysis, patient-grouped splits, run matrix, and artifact contract |
+| [`results/final_analysis/`](results/final_analysis/) | Patient-level results, statistical comparisons, secondary metrics, and audit records |
+| [`results/progress/`](results/progress/) | Complete run tracker in CSV and Excel formats |
+| [`results/validation_records/`](results/validation_records/) | Machine-readable validation record for each accepted run |
+| [`reproducibility/`](reproducibility/) | Analysis, metric, validation, figure-generation, and audit code |
+| [`artifacts/`](artifacts/) | SHA-256 identities for the retained full result archives |
+| [`environment/`](environment/) | Analysis dependencies |
 
-The primary matrix contains one patient-grouped out-of-fold evaluation for each
-model family and outer fold. Additional fold-1 runs with different training
-seeds assess optimization sensitivity without increasing the independent sample
-size. See `protocol/PRESPECIFIED_ANALYSIS.md` and
-`protocol/run_matrix_manifest.csv` for the exact design.
+## Study design
 
-## Read the results without downloading large files
+The primary matrix consists of five model families evaluated across five frozen
+outer folds using training seed 2026. Additional fold-1 runs with seeds 2027
+and 2028 assess optimization sensitivity without increasing the independent
+patient sample size. Checkpoint selection, learning-rate scheduling, and early
+stopping use only the inner tuning partition. The outer fold is used only for
+full-volume evaluation of the selected checkpoint.
 
-The manuscript, figures, final statistical tables, run tracker, validation
-records, and analysis manifest are all committed directly to the repository.
-Start with:
+The complete design and fixed run definitions are available in
+[`protocol/PRESPECIFIED_ANALYSIS.md`](protocol/PRESPECIFIED_ANALYSIS.md) and
+[`protocol/run_matrix_manifest.csv`](protocol/run_matrix_manifest.csv).
 
-1. `paper/MU_Glioma_Research_Paper_Draft.pdf`
-2. `results/final_analysis/README.md`
-3. `results/final_analysis/primary_model_summary.csv`
-4. `results/progress/MU_Glioma_35_Run_Progress.xlsx`
+## Primary result
 
-## Reproduce the final analysis
+The prespecified primary target is the patient-level Dice coefficient for the
+combined tumor-related region (labels 1–3). Each estimate contains one
+out-of-fold result per patient and architecture.
 
-Python 3.11 is recommended. From the repository root:
+| Model | Patients | Mean Dice | 95% bootstrap CI |
+|---|---:|---:|---:|
+| 3D U-Net | 203 | 0.774 | 0.748–0.799 |
+| Residual 3D U-Net | 203 | 0.785 | 0.759–0.808 |
+| 3D V-Net | 203 | 0.781 | 0.755–0.805 |
+| 3D U-Net++ | 203 | 0.761 | 0.735–0.786 |
+| nnU-Net v2 3D fullres | 203 | 0.879 | 0.856–0.900 |
+
+nnU-Net changes multiple pipeline components and is therefore interpreted as a
+whole-pipeline comparator, not as an architecture-only comparison. Full overlap,
+surface, lesion-level, absent-reference, fold, seed, and efficiency results are
+reported in the manuscript and under [`results/final_analysis/`](results/final_analysis/).
+
+## Manuscript
+
+- [PDF](manuscript/MU_Glioma_Research_Paper.pdf)
+- [DOCX](manuscript/MU_Glioma_Research_Paper.docx)
+
+The manuscript has not yet completed journal peer review. Numerical claims
+should be interpreted within the limitations described in the paper.
+
+## Dataset
+
+The original MRI images and reference segmentations are not redistributed here.
+They are available from The Cancer Imaging Archive:
+
+- Collection: [MU-Glioma-Post](https://www.cancerimagingarchive.net/collection/mu-glioma-post/)
+- Dataset DOI: [10.7937/7K9K-3C83](https://doi.org/10.7937/7K9K-3C83)
+
+The frozen patient-level split definitions used in this study are included in
+[`protocol/splits/`](protocol/splits/).
+
+## Reproducibility
+
+The committed CSV, JSON, Excel, and figure files are sufficient to inspect the
+reported numerical results without downloading the imaging dataset. To prepare
+the analysis environment:
 
 ```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r environment/requirements-analysis.txt
-./release-assets/download_validated_results.sh
-python reproducibility/analyze_final_35_runs.py
-python reproducibility/audit_final_outputs.py
+python reproducibility/audit_execution_notebooks.py
 ```
 
-The download script obtains the 35 validated archives from the GitHub release,
-checks their SHA-256 hashes, and places them under
-`results/validated_zips/no1` through `results/validated_zips/no35`, which is the
-layout expected by the analysis programs.
+The full analysis program reads the validated run archives from
+`results/validated_zips/no1` through `results/validated_zips/no35`. Those large
+archives contain checkpoints, logs, configurations, detailed metrics, and
+full-volume predictions. They are retained by the authors but are not currently
+distributed through this repository. Their filenames, sizes, and SHA-256 hashes
+are recorded in [`results/validated_result_manifest.csv`](results/validated_result_manifest.csv)
+and [`artifacts/validated_archive_checksums.sha256`](artifacts/validated_archive_checksums.sha256).
 
-The original MRI data are not required to inspect the committed numerical
-results. They are required for training and for rebuilding image-based
-qualitative panels. Follow `protocol/DATASET_NOT_INCLUDED.md` and retain the
-original TCIA directory layout.
+The exact training notebooks are included for method inspection and replication.
+Running them requires a separately obtained copy of MU-Glioma-Post and a
+compatible GPU environment. Platform-specific storage paths may need adaptation;
+the patient partitions, random seeds, stopping rules, target definitions, and
+evaluation rules should remain unchanged for a direct replication.
 
-## Run provenance
+## Licensing
 
-`notebooks/execution_notebook_manifest.csv` maps each run to the notebook and
-platform actually used. `results/validated_result_manifest.csv` records the
-architecture, fold, seed, epoch information, score summary, archive size, and
-SHA-256 hash for every accepted result.
-
-The notebooks contain no saved execution outputs. Platform-specific absolute
-paths in code are part of the original execution configuration and may need to
-be changed when rerunning on another system; the frozen patient identities,
-folds, seeds, stopping rules, and metric definitions must not be changed if the
-goal is an exact replication.
-
-## Status
-
-This is the private author/supervisor review version. Items that must be resolved
-before making the repository public are listed in `REVIEW_REQUIRED.md`. No DOI
-or external archive is required to use this GitHub package; a DOI archive can be
-added later as an optional preservation mirror.
+Original code and notebook code cells are licensed under the MIT License.
+Original manuscript text, documentation, tables, and figures are licensed under
+CC BY 4.0. The source dataset and third-party software retain their own terms.
+See [`LICENSES.md`](LICENSES.md) for the exact scope.
 
 ## Citation
 
-Citation metadata are provided in `CITATION.cff`. Until the article receives a
-formal citation, cite this repository together with the MU-Glioma-Post source
-dataset DOI above.
+Repository citation metadata are provided in [`CITATION.cff`](CITATION.cff).
+Any use of the source imaging data must also cite the MU-Glioma-Post dataset and
+its associated publication.

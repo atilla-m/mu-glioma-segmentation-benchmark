@@ -1,8 +1,11 @@
 cff-version: 1.2.0
-message: "If you use these materials, please cite the repository, the associated article, and the MU-Glioma-Post source dataset."
+message: "If you use these materials, please cite this repository, the associated manuscript, and the MU-Glioma-Post source dataset."
 type: dataset
 title: "Reproducibility materials for nested patient-grouped benchmarking of 3D deep-learning pipelines for postoperative glioma segmentation"
-version: 0.1.0-review
+version: 1.0.0
+date-released: 2026-09-19
+url: "https://github.com/atilla-m/mu-glioma-segmentation-benchmark"
+repository-code: "https://github.com/atilla-m/mu-glioma-segmentation-benchmark"
 authors:
   - given-names: Atilla
     family-names: Mustafa
