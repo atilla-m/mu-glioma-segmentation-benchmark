@@ -1,0 +1,7 @@
+matplotlib==3.11.1
+nibabel==5.4.2
+numpy==2.4.6
+pandas==3.0.5
+scipy==1.17.1
+surface-distance==0.1
+openpyxl>=3.1,<4

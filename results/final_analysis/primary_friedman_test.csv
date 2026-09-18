@@ -1,0 +1,2 @@
+test,n_patients,degrees_of_freedom,statistic,p_value
+Friedman omnibus: four controlled Keras models,203,3,47.2935960591135,3.0100610198468735e-10

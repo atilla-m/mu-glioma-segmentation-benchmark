@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite the repository, the associated article, and the MU-Glioma-Post source dataset."
+type: dataset
+title: "Reproducibility materials for nested patient-grouped benchmarking of 3D deep-learning pipelines for postoperative glioma segmentation"
+version: 0.1.0-review
+authors:
+  - given-names: Atilla
+    family-names: Mustafa
+  - given-names: Jamila
+    family-names: Jabrayilli
+  - given-names: Elkhan
+    family-names: Aghakishiyev
+  - given-names: Alasgar
+    family-names: Aliyev
+keywords:
+  - postoperative glioma
+  - MRI segmentation
+  - 3D U-Net
+  - V-Net
+  - U-Net++
+  - nnU-Net
+  - patient-grouped cross-validation
+abstract: >-
+  Manuscript, exact execution notebooks, frozen patient partitions, validated
+  result manifests, summary metrics, statistical analyses, figures, and audit
+  records for a patient-grouped benchmark of volumetric postoperative glioma
+  segmentation pipelines using the MU-Glioma-Post collection.

@@ -1,0 +1,17 @@
+{
+  "run_id": "no12",
+  "status": "PASS",
+  "source": "local_training_outputs/MU_Glioma_no12_residual-unet_fold5_seed2026_results.zip",
+  "organized_copy": "Returned_Results/matrix_runs/no12/MU_Glioma_no12_residual-unet_fold5_seed2026_results.zip",
+  "archive_validation": "PASS",
+  "prediction_files": 118,
+  "checksum_rows_verified": 138,
+  "archive_members": 139,
+  "completed_epochs": 55,
+  "best_epoch": 50,
+  "best_tuning_dice": 0.6293785572052002,
+  "outer_test_all_postoperative_mean_dice": 0.7981766212243573,
+  "platform": "RTX 3050",
+  "archive_bytes": 146569944,
+  "archive_sha256": "c884fa5809f2087187180cc0bd32c8a8848c650c3315073388c495933e695736"
+}

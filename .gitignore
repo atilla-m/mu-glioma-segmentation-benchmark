@@ -1,0 +1,30 @@
+# Credentials and local configuration
+.env
+.env.*
+kaggle.json
+*api_key*
+*access_token*
+
+# Large research artifacts belong in GitHub Releases
+*.zip
+*.h5
+*.keras
+*.pt
+*.pth
+*.nii
+*.nii.gz
+results/validated_zips/
+.release-downloads/
+
+# Python/Jupyter/editor artifacts
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Office temporary files and operating-system metadata
+~$*
+.DS_Store
+Thumbs.db

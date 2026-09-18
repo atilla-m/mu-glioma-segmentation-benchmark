@@ -1,0 +1,192 @@
+{
+  "analysis_version": "final_35_run_prespecified_v1",
+  "analysis_freeze_date": "2026-09-04",
+  "generated_at": "2026-09-06T17:13:23+04:00",
+  "script": "MU_Glioma_Research_Package/reproducibility/analyze_final_35_runs.py",
+  "script_sha256": "58db9448107957de117373a3f17c484ba2837721c23dcb528c0f9ea42839aac2",
+  "python": "3.11.16",
+  "numpy": "2.4.6",
+  "pandas": "3.0.5",
+  "scipy": "1.17.1",
+  "matplotlib": "3.11.1",
+  "nibabel": "5.4.2",
+  "bootstrap_resamples": 100000,
+  "bootstrap_seed": 2026,
+  "validated_archives": [
+    {
+      "run_id": "no1",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no1/MU_Glioma_no1_unet_fold1_seed2026_results.zip",
+      "zip_sha256": "afde896a5e299987730cf394bbdb434fbaf8247493c1f4cc721b1ffbd3450734"
+    },
+    {
+      "run_id": "no2",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no2/MU_Glioma_no2_unet_fold2_seed2026_results.zip",
+      "zip_sha256": "2b64b471df8a23f895e26bd94da9c673cc172d8beef12cefc71faf93031e5b3c"
+    },
+    {
+      "run_id": "no3",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no3/MU_Glioma_no3_unet_fold3_seed2026_results.zip",
+      "zip_sha256": "5604c0a8d71230cfd30fa9a16a631ea9a0e1a0d6219ba66804651c619c471068"
+    },
+    {
+      "run_id": "no4",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no4/MU_Glioma_no4_unet_fold4_seed2026_results.zip",
+      "zip_sha256": "4a30ed8a87ce5f1ca7e2377a13d8a9851aa655e2dc96a4beca28bbeab1c6f41d"
+    },
+    {
+      "run_id": "no5",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no5/MU_Glioma_no5_unet_fold5_seed2026_results.zip",
+      "zip_sha256": "7d34e0572f9a7b3e23af926a7c75efdd6227930ab1a47dfa0efdd512a82070ec"
+    },
+    {
+      "run_id": "no6",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no6/MU_Glioma_no6_unet_fold1_seed2027_results.zip",
+      "zip_sha256": "917e1dca6a3fbb723261dc6c2b7b0b459dbe074d8291e7b13937f741680dc677"
+    },
+    {
+      "run_id": "no7",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no7/MU_Glioma_no7_unet_fold1_seed2028_results.zip",
+      "zip_sha256": "d49df6991d12750186b5d21e1494f8ddb128e8a4e3f3b3ee76fb7b9e66cdd1ea"
+    },
+    {
+      "run_id": "no8",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no8/MU_Glioma_no8_residual-unet_fold1_seed2026_results.zip",
+      "zip_sha256": "3f22299006bafa8f3a2bea68b22270cdc836b9e07a0ed92efcf690ce33617b93"
+    },
+    {
+      "run_id": "no9",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no9/MU_Glioma_no9_residual-unet_fold2_seed2026_results.zip",
+      "zip_sha256": "0fbd0daf9d03d9fab5be6cf67ec381b8bd633951622f9a2d55dbcdbacaf4bedb"
+    },
+    {
+      "run_id": "no10",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no10/MU_Glioma_no10_residual-unet_fold3_seed2026_results.zip",
+      "zip_sha256": "c3ceee4b7407d8f4e9ace7524aa96b9bf88c84e59e98dd32615a0606087e3d69"
+    },
+    {
+      "run_id": "no11",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no11/MU_Glioma_no11_residual-unet_fold4_seed2026_results.zip",
+      "zip_sha256": "f6eebf164bef0cd8298838e0541425e7f33831124fc76b284cf5cb424403ad4e"
+    },
+    {
+      "run_id": "no12",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no12/MU_Glioma_no12_residual-unet_fold5_seed2026_results.zip",
+      "zip_sha256": "c884fa5809f2087187180cc0bd32c8a8848c650c3315073388c495933e695736"
+    },
+    {
+      "run_id": "no13",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no13/MU_Glioma_no13_residual-unet_fold1_seed2027_results.zip",
+      "zip_sha256": "a3616ab4119a8f4487bfe24d930c4fd389aec325ac9134e94d5e15f5459f98c9"
+    },
+    {
+      "run_id": "no14",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no14/MU_Glioma_no14_residual-unet_fold1_seed2028_results.zip",
+      "zip_sha256": "f73934465a66cdf782c0bc4c8db0fb92784a7bbe200f66c349a3b6b91571cf7f"
+    },
+    {
+      "run_id": "no15",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no15/MU_Glioma_no15_vnet_fold1_seed2026_results.zip",
+      "zip_sha256": "b36cac1ca3694ea7af2dbaa2738cab5cd20fc38595c3dbbaa2723d2e8b6c602e"
+    },
+    {
+      "run_id": "no16",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no16/MU_Glioma_no16_vnet_fold2_seed2026_results.zip",
+      "zip_sha256": "071ffc57a073dfffb24ef802bb90b6eb6e177464487ace31525672d4af01e0ac"
+    },
+    {
+      "run_id": "no17",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no17/MU_Glioma_no17_vnet_fold3_seed2026_results.zip",
+      "zip_sha256": "5312726ad6d68ebf7076a93c688a7d87766b92af7f6575d2e1af9837b02fc5f8"
+    },
+    {
+      "run_id": "no18",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no18/MU_Glioma_no18_vnet_fold4_seed2026_results.zip",
+      "zip_sha256": "5a6af3a4b90f853f3ac26aed49ef59dabbd0f713d5fc155ef676f1aebac7c70e"
+    },
+    {
+      "run_id": "no19",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no19/MU_Glioma_no19_vnet_fold5_seed2026_results.zip",
+      "zip_sha256": "eea31d08487af3281c28b4b29743bcb962e89247e32c736e41e06df61f855f1e"
+    },
+    {
+      "run_id": "no20",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no20/MU_Glioma_no20_vnet_fold1_seed2027_results.zip",
+      "zip_sha256": "d469d40939fc11e789d8f50d7360584c570e04212b8fae00e7dd487865c388b6"
+    },
+    {
+      "run_id": "no21",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no21/MU_Glioma_no21_vnet_fold1_seed2028_results.zip",
+      "zip_sha256": "0ba47d60dfc3fabbb83b6302731d8226e63b5764395bc3334e5ce628b5eb9ce3"
+    },
+    {
+      "run_id": "no22",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no22/MU_Glioma_no22_unetplusplus_fold1_seed2026_results.zip",
+      "zip_sha256": "25e744b8d4704ad2a2db11bd98c3e89ab64a20d23c590075c3c4c6b721685fec"
+    },
+    {
+      "run_id": "no23",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no23/MU_Glioma_no23_unetplusplus_fold2_seed2026_results.zip",
+      "zip_sha256": "0b9f5cf05bf89210452dc215d199dcceb4915bbd5736a3e802e0c3e3b59140a3"
+    },
+    {
+      "run_id": "no24",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no24/MU_Glioma_no24_unetplusplus_fold3_seed2026_results.zip",
+      "zip_sha256": "2a1fee4e0fa2d4b31817b26747c154664378a9c7b145df6277c1cebeab621c78"
+    },
+    {
+      "run_id": "no25",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no25/MU_Glioma_no25_unetplusplus_fold4_seed2026_results.zip",
+      "zip_sha256": "c85f49657cf411ff3c80f5ac71a92314b6576030ab91120a0bf901511ebdb726"
+    },
+    {
+      "run_id": "no26",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no26/MU_Glioma_no26_unetplusplus_fold5_seed2026_results.zip",
+      "zip_sha256": "32ac0279172187c5b978c22fae198cefb8cd8e7b75b5af6b3f3ab2964470a160"
+    },
+    {
+      "run_id": "no27",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no27/MU_Glioma_no27_unetplusplus_fold1_seed2027_results.zip",
+      "zip_sha256": "657dd2577b18f983101c4e6fb7d220a522cd44b28d73438a388f9414f1b98cb9"
+    },
+    {
+      "run_id": "no28",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no28/MU_Glioma_no28_unetplusplus_fold1_seed2028_results.zip",
+      "zip_sha256": "a08fa97b2dcfa8395c22023ccd284ac3eebed2ea4304c8d9675f92eedbb32fb4"
+    },
+    {
+      "run_id": "no29",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no29/MU_Glioma_no29_nnunet_fold1_seed2026_reports.zip",
+      "zip_sha256": "5354e5d986c9fb03601e6082518a2c98f04ccfbd3f66d1c32d7c8212594c291d"
+    },
+    {
+      "run_id": "no30",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no30/MU_Glioma_no30_nnunet_fold2_seed2026_reports.zip",
+      "zip_sha256": "aea4f4a43a9c367769abe08896cd4a860b3c4859aa8aa9e53df28ff5fb27549e"
+    },
+    {
+      "run_id": "no31",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no31/MU_Glioma_no31_nnunet_fold3_seed2026_reports.zip",
+      "zip_sha256": "06d93a0af26594490c03391b1b80355dcf75d6c7edcb909cf559936e2afe8e6b"
+    },
+    {
+      "run_id": "no32",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no32/MU_Glioma_no32_nnunet_fold4_seed2026_reports.zip",
+      "zip_sha256": "f72603c0db5fe78a942f7e4859229cbb9519eede6db9b3904cb2a597ce6ee1cc"
+    },
+    {
+      "run_id": "no33",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no33/MU_Glioma_no33_nnunet_fold5_seed2026_reports.zip",
+      "zip_sha256": "0101aecf95518c13b0faff9924293f8592ffba05ec040525de32a0468eb28376"
+    },
+    {
+      "run_id": "no34",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no34/MU_Glioma_no34_nnunet_fold1_seed2027_reports.zip",
+      "zip_sha256": "3b0abed52f1ed2e1b691fda513c9562666d5b39a59fe2b435c7c7bd65cae7119"
+    },
+    {
+      "run_id": "no35",
+      "zip_path": "MU_Glioma_Research_Package/results/validated_zips/no35/MU_Glioma_no35_nnunet_fold1_seed2028_reports.zip",
+      "zip_sha256": "7ea14a9f306cf442fc11864d3c11341bbc5de9710fb6eb647c881f180e7f94cd"
+    }
+  ]
+}

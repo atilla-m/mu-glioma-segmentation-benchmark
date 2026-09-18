@@ -1,0 +1,448 @@
+{
+  "audit_version": "final_manuscript_audit_v1",
+  "date": "2026-09-06",
+  "status": "PASS",
+  "checks_passed": 88,
+  "checks": [
+    {
+      "check": "35 validated ZIPs are present",
+      "passed": true,
+      "detail": "35"
+    },
+    {
+      "check": "ZIP run IDs are exactly no1-no35",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input hash no1",
+      "passed": true,
+      "detail": "afde896a5e299987730cf394bbdb434fbaf8247493c1f4cc721b1ffbd3450734"
+    },
+    {
+      "check": "input hash no2",
+      "passed": true,
+      "detail": "2b64b471df8a23f895e26bd94da9c673cc172d8beef12cefc71faf93031e5b3c"
+    },
+    {
+      "check": "input hash no3",
+      "passed": true,
+      "detail": "5604c0a8d71230cfd30fa9a16a631ea9a0e1a0d6219ba66804651c619c471068"
+    },
+    {
+      "check": "input hash no4",
+      "passed": true,
+      "detail": "4a30ed8a87ce5f1ca7e2377a13d8a9851aa655e2dc96a4beca28bbeab1c6f41d"
+    },
+    {
+      "check": "input hash no5",
+      "passed": true,
+      "detail": "7d34e0572f9a7b3e23af926a7c75efdd6227930ab1a47dfa0efdd512a82070ec"
+    },
+    {
+      "check": "input hash no6",
+      "passed": true,
+      "detail": "917e1dca6a3fbb723261dc6c2b7b0b459dbe074d8291e7b13937f741680dc677"
+    },
+    {
+      "check": "input hash no7",
+      "passed": true,
+      "detail": "d49df6991d12750186b5d21e1494f8ddb128e8a4e3f3b3ee76fb7b9e66cdd1ea"
+    },
+    {
+      "check": "input hash no8",
+      "passed": true,
+      "detail": "3f22299006bafa8f3a2bea68b22270cdc836b9e07a0ed92efcf690ce33617b93"
+    },
+    {
+      "check": "input hash no9",
+      "passed": true,
+      "detail": "0fbd0daf9d03d9fab5be6cf67ec381b8bd633951622f9a2d55dbcdbacaf4bedb"
+    },
+    {
+      "check": "input hash no10",
+      "passed": true,
+      "detail": "c3ceee4b7407d8f4e9ace7524aa96b9bf88c84e59e98dd32615a0606087e3d69"
+    },
+    {
+      "check": "input hash no11",
+      "passed": true,
+      "detail": "f6eebf164bef0cd8298838e0541425e7f33831124fc76b284cf5cb424403ad4e"
+    },
+    {
+      "check": "input hash no12",
+      "passed": true,
+      "detail": "c884fa5809f2087187180cc0bd32c8a8848c650c3315073388c495933e695736"
+    },
+    {
+      "check": "input hash no13",
+      "passed": true,
+      "detail": "a3616ab4119a8f4487bfe24d930c4fd389aec325ac9134e94d5e15f5459f98c9"
+    },
+    {
+      "check": "input hash no14",
+      "passed": true,
+      "detail": "f73934465a66cdf782c0bc4c8db0fb92784a7bbe200f66c349a3b6b91571cf7f"
+    },
+    {
+      "check": "input hash no15",
+      "passed": true,
+      "detail": "b36cac1ca3694ea7af2dbaa2738cab5cd20fc38595c3dbbaa2723d2e8b6c602e"
+    },
+    {
+      "check": "input hash no16",
+      "passed": true,
+      "detail": "071ffc57a073dfffb24ef802bb90b6eb6e177464487ace31525672d4af01e0ac"
+    },
+    {
+      "check": "input hash no17",
+      "passed": true,
+      "detail": "5312726ad6d68ebf7076a93c688a7d87766b92af7f6575d2e1af9837b02fc5f8"
+    },
+    {
+      "check": "input hash no18",
+      "passed": true,
+      "detail": "5a6af3a4b90f853f3ac26aed49ef59dabbd0f713d5fc155ef676f1aebac7c70e"
+    },
+    {
+      "check": "input hash no19",
+      "passed": true,
+      "detail": "eea31d08487af3281c28b4b29743bcb962e89247e32c736e41e06df61f855f1e"
+    },
+    {
+      "check": "input hash no20",
+      "passed": true,
+      "detail": "d469d40939fc11e789d8f50d7360584c570e04212b8fae00e7dd487865c388b6"
+    },
+    {
+      "check": "input hash no21",
+      "passed": true,
+      "detail": "0ba47d60dfc3fabbb83b6302731d8226e63b5764395bc3334e5ce628b5eb9ce3"
+    },
+    {
+      "check": "input hash no22",
+      "passed": true,
+      "detail": "25e744b8d4704ad2a2db11bd98c3e89ab64a20d23c590075c3c4c6b721685fec"
+    },
+    {
+      "check": "input hash no23",
+      "passed": true,
+      "detail": "0b9f5cf05bf89210452dc215d199dcceb4915bbd5736a3e802e0c3e3b59140a3"
+    },
+    {
+      "check": "input hash no24",
+      "passed": true,
+      "detail": "2a1fee4e0fa2d4b31817b26747c154664378a9c7b145df6277c1cebeab621c78"
+    },
+    {
+      "check": "input hash no25",
+      "passed": true,
+      "detail": "c85f49657cf411ff3c80f5ac71a92314b6576030ab91120a0bf901511ebdb726"
+    },
+    {
+      "check": "input hash no26",
+      "passed": true,
+      "detail": "32ac0279172187c5b978c22fae198cefb8cd8e7b75b5af6b3f3ab2964470a160"
+    },
+    {
+      "check": "input hash no27",
+      "passed": true,
+      "detail": "657dd2577b18f983101c4e6fb7d220a522cd44b28d73438a388f9414f1b98cb9"
+    },
+    {
+      "check": "input hash no28",
+      "passed": true,
+      "detail": "a08fa97b2dcfa8395c22023ccd284ac3eebed2ea4304c8d9675f92eedbb32fb4"
+    },
+    {
+      "check": "input hash no29",
+      "passed": true,
+      "detail": "5354e5d986c9fb03601e6082518a2c98f04ccfbd3f66d1c32d7c8212594c291d"
+    },
+    {
+      "check": "input hash no30",
+      "passed": true,
+      "detail": "aea4f4a43a9c367769abe08896cd4a860b3c4859aa8aa9e53df28ff5fb27549e"
+    },
+    {
+      "check": "input hash no31",
+      "passed": true,
+      "detail": "06d93a0af26594490c03391b1b80355dcf75d6c7edcb909cf559936e2afe8e6b"
+    },
+    {
+      "check": "input hash no32",
+      "passed": true,
+      "detail": "f72603c0db5fe78a942f7e4859229cbb9519eede6db9b3904cb2a597ce6ee1cc"
+    },
+    {
+      "check": "input hash no33",
+      "passed": true,
+      "detail": "0101aecf95518c13b0faff9924293f8592ffba05ec040525de32a0468eb28376"
+    },
+    {
+      "check": "input hash no34",
+      "passed": true,
+      "detail": "3b0abed52f1ed2e1b691fda513c9562666d5b39a59fe2b435c7c7bd65cae7119"
+    },
+    {
+      "check": "input hash no35",
+      "passed": true,
+      "detail": "7ea14a9f306cf442fc11864d3c11341bbc5de9710fb6eb647c881f180e7f94cd"
+    },
+    {
+      "check": "primary row count",
+      "passed": true,
+      "detail": "1015"
+    },
+    {
+      "check": "203 primary patients: Standard 3D U-Net",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no missing primary Dice: Standard 3D U-Net",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "203 primary patients: Residual 3D U-Net",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no missing primary Dice: Residual 3D U-Net",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "203 primary patients: Controlled 3D V-Net",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no missing primary Dice: Controlled 3D V-Net",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "203 primary patients: Controlled 3D U-Net++",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no missing primary Dice: Controlled 3D U-Net++",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "203 primary patients: nnU-Net v2 3D fullres",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no missing primary Dice: nnU-Net v2 3D fullres",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "primary patient Dice reproduces from per-case tables",
+      "passed": true,
+      "detail": "3.3306690738754696e-16"
+    },
+    {
+      "check": "primary summary means reproduce",
+      "passed": true,
+      "detail": "1.1102230246251565e-16"
+    },
+    {
+      "check": "development holdout has 41 unique patients",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "complementary sensitivity has 162 patients",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "three qualitative cases selected",
+      "passed": true,
+      "detail": "3"
+    },
+    {
+      "check": "qualitative patients are distinct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "qualitative prediction PatientID_0036_Timepoint_6 Standard 3D U-Net",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0036_Timepoint_6 Residual 3D U-Net",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0036_Timepoint_6 Controlled 3D V-Net",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0036_Timepoint_6 Controlled 3D U-Net++",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0036_Timepoint_6 nnU-Net v2 3D fullres",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0014_Timepoint_2 Standard 3D U-Net",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0014_Timepoint_2 Residual 3D U-Net",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0014_Timepoint_2 Controlled 3D V-Net",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0014_Timepoint_2 Controlled 3D U-Net++",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0014_Timepoint_2 nnU-Net v2 3D fullres",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0094_Timepoint_1 Standard 3D U-Net",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0094_Timepoint_1 Residual 3D U-Net",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0094_Timepoint_1 Controlled 3D V-Net",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0094_Timepoint_1 Controlled 3D U-Net++",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "qualitative prediction PatientID_0094_Timepoint_1 nnU-Net v2 3D fullres",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "manuscript has no pending analysis marker",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript contains 0.879",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript contains 47.29",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript contains 4.76 \u00d7 10^-33",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript contains 4,160",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript contains Figure 6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "figure exists and is nonempty: study_design.png",
+      "passed": true,
+      "detail": "295865"
+    },
+    {
+      "check": "figure exists and is nonempty: primary_performance.png",
+      "passed": true,
+      "detail": "260009"
+    },
+    {
+      "check": "figure exists and is nonempty: target_metrics.png",
+      "passed": true,
+      "detail": "309151"
+    },
+    {
+      "check": "figure exists and is nonempty: absent_reference_false_positives.png",
+      "passed": true,
+      "detail": "131556"
+    },
+    {
+      "check": "figure exists and is nonempty: fold_seed_sensitivity.png",
+      "passed": true,
+      "detail": "239926"
+    },
+    {
+      "check": "figure exists and is nonempty: qualitative_predictions.png",
+      "passed": true,
+      "detail": "277895"
+    },
+    {
+      "check": "PDF exists",
+      "passed": true,
+      "detail": "1268022"
+    },
+    {
+      "check": "PDF has at least 10 pages",
+      "passed": true,
+      "detail": "17"
+    },
+    {
+      "check": "PDF contains Primary out-of-fold",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF contains 0.879",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF contains Declaration of generative AI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF contains References",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "DOCX embeds all six figures",
+      "passed": true,
+      "detail": "['word/media/image6.png', 'word/media/image1.png', 'word/media/image5.png', 'word/media/image4.png', 'word/media/image3.png', 'word/media/image2.png']"
+    }
+  ]
+}

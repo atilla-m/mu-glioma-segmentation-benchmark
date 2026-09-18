@@ -1,0 +1,17 @@
+{
+  "run_id": "no22",
+  "status": "PASS",
+  "source": "RunPod_Returned_Zips/no22/MU_Glioma_no22_unetplusplus_fold1_seed2026_results.zip",
+  "organized_copy": "Returned_Results/matrix_runs/no22/MU_Glioma_no22_unetplusplus_fold1_seed2026_results.zip",
+  "archive_validation": "PASS",
+  "prediction_files": 119,
+  "checksum_rows_verified": 139,
+  "archive_members": 140,
+  "completed_epochs": 37,
+  "best_epoch": 34,
+  "best_tuning_dice": 0.5780860185623169,
+  "outer_test_all_postoperative_mean_dice": 0.75662509613958,
+  "platform": "A40",
+  "archive_bytes": 167400406,
+  "archive_sha256": "25e744b8d4704ad2a2db11bd98c3e89ab64a20d23c590075c3c4c6b721685fec"
+}

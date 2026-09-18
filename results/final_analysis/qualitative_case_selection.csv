@@ -1,0 +1,4 @@
+cross_model_mean_dice,cross_model_sd_dice,cross_model_min_dice,cross_model_max_dice,patient_id,fold,selection_label,case_id
+0.8559070655421414,0.05533211363614176,0.8072808193774785,0.9390507661053544,PatientID_0036,3,Median-typical,PatientID_0036_Timepoint_6
+0.5510203640944737,0.2621046077664973,0.2102773735125417,0.8978117048346056,PatientID_0014,4,Lower-decile challenge,PatientID_0014_Timepoint_2
+0.277841678692442,0.3333067547496055,0.0999356715079142,0.8707992092629201,PatientID_0094,1,Largest model disagreement,PatientID_0094_Timepoint_1

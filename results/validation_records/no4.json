@@ -1,0 +1,17 @@
+{
+  "run_id": "no4",
+  "status": "PASS",
+  "source": "zips/MU_Glioma_no4_unet_fold4_seed2026_results.zip",
+  "organized_copy": "Returned_Results/matrix_runs/no4/MU_Glioma_no4_unet_fold4_seed2026_results.zip",
+  "archive_validation": "PASS",
+  "prediction_files": 119,
+  "checksum_rows_verified": 139,
+  "archive_members": 140,
+  "completed_epochs": 57,
+  "best_epoch": 56,
+  "best_tuning_dice": 0.5153958797454834,
+  "outer_test_all_postoperative_mean_dice": 0.7799271267004131,
+  "platform": "P100",
+  "archive_bytes": 145522947,
+  "archive_sha256": "4a30ed8a87ce5f1ca7e2377a13d8a9851aa655e2dc96a4beca28bbeab1c6f41d"
+}
